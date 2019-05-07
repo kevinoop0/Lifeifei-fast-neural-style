@@ -8,7 +8,9 @@ train dataset : COCO 2014 Training images dataset [80K/13GB] [(download)](http:/
 
 ## Prerequisites
 
+```
 pip install requirements.txt
+```
 
 
 
@@ -32,4 +34,4 @@ python neural_style/neural_style.py eval --content-image ./images/content-images
 
 ## Result
 
-![merge](http://a2.qpic.cn/psb?/V12kySKV4IhBFe/V8Y*rluA3lrVHUbeb9GMTT9Km9vBZa7Uv95.oebJXsM!/b/dEkBAAAAAAAA&ek=1&kp=1&pt=0&bo=OAQ4BAAAAAARNwA!&tl=3&vuin=1577159875&tm=1557223200&sce=60-2-2&rf=viewer_4)
+<img src="http://a2.qpic.cn/psb?/V12kySKV4IhBFe/V8Y*rluA3lrVHUbeb9GMTT9Km9vBZa7Uv95.oebJXsM!/b/dEkBAAAAAAAA&ek=1&kp=1&pt=0&bo=OAQ4BAAAAAARNwA!&tl=3&vuin=1577159875&tm=1557223200&sce=60-2-2&rf=viewer_4" width="80%" height="80%">
