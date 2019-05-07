@@ -12,6 +12,8 @@ pip install requirements.txt
 
 ## Usage
 
+ If you want to visualize the training process , you need to type `python -m visdom.server` to open visdom.
+
 train examples:
 
 ```
