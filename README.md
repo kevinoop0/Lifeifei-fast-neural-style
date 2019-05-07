@@ -1,8 +1,10 @@
-##  The pytorch implementation of  fast-neural-style
+##  The simple pytorch implementation of  fast-neural-style
 
 Paper:  [Perceptual Losses for Real-Time Style Transfer and Super-Resolution](https://arxiv.org/abs/1603.08155) 
 
-data: COCO 2014 Training images dataset [80K/13GB] [(download)](http://mscoco.org/dataset/#download).
+train dataset : COCO 2014 Training images dataset [80K/13GB] [(download)](http://mscoco.org/dataset/#download).
+
+
 
 ## Prerequisites
 
@@ -30,4 +32,4 @@ python neural_style/neural_style.py eval --content-image ./images/content-images
 
 ## Result
 
-![merge](E:\Medical image\7. Code\My project\pycharm\fast_neural_style_lifeifei\merge.jpg)
+![merge](http://a2.qpic.cn/psb?/V12kySKV4IhBFe/V8Y*rluA3lrVHUbeb9GMTT9Km9vBZa7Uv95.oebJXsM!/b/dEkBAAAAAAAA&ek=1&kp=1&pt=0&bo=OAQ4BAAAAAARNwA!&tl=3&vuin=1577159875&tm=1557223200&sce=60-2-2&rf=viewer_4)
