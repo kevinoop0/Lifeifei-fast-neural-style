@@ -39,9 +39,11 @@ class Config(object):
 
 def train(**kwargs):
     opt = Config()
+
     for k_, v_ in kwargs.items():
         setattr(opt, k_, v_)
-    device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    device = torch.device('cuda') if opt.use_gpu else torch.device('cpu')
     transform = transforms.Compose([
         transforms.Resize(opt.image_size),
         transforms.CenterCrop(opt.image_size),
