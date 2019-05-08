@@ -24,7 +24,7 @@ class Config(object):
     lr = 1e-3  # 学习率
 
     env = 'neural-style'  # visdom env
-    plot_every = 10  # 每10个batch可视化一次
+    log_interval = 10  # 每10个batch可视化一次
 
     epoches = 2  # 训练epoch
 
@@ -48,7 +48,7 @@ def train(**kwargs):
         transforms.ToTensor(),
         transforms.Lambda(lambda x: x.mul(255))
     ])
-    train_dataset = datasets.ImageFolder(opt.dataset, transform)
+    train_dataset = datasets.ImageFolder(opt.data_root, transform)
     train_loader = DataLoader(train_dataset, batch_size=opt.batch_size, drop_last=True)
 
     model = TransformerNet().to(device)
@@ -93,7 +93,7 @@ def train(**kwargs):
                 print(message)
     model.eval()
     save_model_filename = 'epoch' + str(opt.epochs) + '_' + 'batch_size' + str(opt.batch_size) + '.pth'
-    save_model_path = os.path.join(opt.save_model_dir, save_model_filename)
+    save_model_path = os.path.join(opt.model_path, save_model_filename)
     torch.save(model.state_dict(), save_model_path)
 
 def stylize(**kwargs):
